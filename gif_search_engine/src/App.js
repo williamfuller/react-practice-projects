@@ -1,7 +1,7 @@
 import "./App.css"
 import {useRef, useState} from "react";
 
-const TENORAPIKEY = "AIzaSyCqnZJadcpv49InF3HnS4rvYuCnjGu28mg"
+const TENORAPIKEY = "" // put ya key here
 const TENORROOT = "https://tenor.googleapis.com/v2"
 const SEARCHENDPOINT = "search?q="
 
