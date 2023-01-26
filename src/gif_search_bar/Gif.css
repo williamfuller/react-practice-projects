@@ -1,0 +1,41 @@
+.gif-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.box{
+    width: min(80vw, 500px);
+    height: max(40vh, 250px);
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.container .gif{
+    margin: auto;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.hidden{
+    display: none;
+}
+
+.queryButton, .queryInput{
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold; 
+}
+
+.queryButton{
+    margin-left: 2rem;
+    padding-left: 2rem;
+    background-color: #c2410c;
+    color: white;
+    cursor: pointer;
+}

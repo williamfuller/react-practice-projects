@@ -1,0 +1,24 @@
+.shop-container{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+img{
+  width: 304px;
+  height: 171px;
+  object-fit: cover;
+}
+
+.hide{
+  display: none;
+}
+
+.shop-item{
+  text-align: center;
+  padding-bottom: 1em;
+  margin: 1em;
+  width: 304px;
+  background-color: lightgray;
+  border-radius: 10px;
+  overflow: hidden;
+}
