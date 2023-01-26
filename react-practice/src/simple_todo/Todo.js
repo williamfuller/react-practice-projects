@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './Todo.css';
 
 const AddTodoWindow = ({todos, setTodos}) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -31,7 +32,7 @@ const AddTodoWindow = ({todos, setTodos}) => {
   );
 }
 
-const Todo = ({todo, todos, setTodos}) => {
+const TodoElement = ({todo, todos, setTodos}) => {
 
   const removeTodo = targetTodoId => {
     const newTodos = todos.filter(todo => todo.id !== targetTodoId);
@@ -63,20 +64,20 @@ const TodoList = () => {
 
   return(
     <>
-        {todos.map((todo) => (<Todo todo={todo} todos={todos} setTodos={setTodos}/>))}
+        {todos.map((todo) => (<TodoElement todo={todo} todos={todos} setTodos={setTodos}/>))}
         <AddTodoWindow todos={todos} setTodos={setTodos}/>
     </>
 
   )
 } 
 
-const App = () => {
+const Todo = () => {
   return (
-    <>
+    <div className="todo-container">
       <h1>Simple To Do</h1>
       <TodoList />
-    </>
+    </div>
   );
 }
 
-export default App;
+export default Todo;

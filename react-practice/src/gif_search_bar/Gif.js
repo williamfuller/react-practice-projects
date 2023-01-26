@@ -1,4 +1,4 @@
-import "./App.css"
+import "./Gif.css"
 import {useRef, useState} from "react";
 
 const TENORAPIKEY = "" // put ya key here
@@ -39,7 +39,7 @@ const QueryBar = ({setUrl}) =>{
   )
 }
 
-function App() {
+function Gif() {
   
   const [url, setUrl] = useState("")
 
@@ -52,4 +52,4 @@ function App() {
   );
 }
 
-export default App;
+export default Gif;

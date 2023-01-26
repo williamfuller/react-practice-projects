@@ -1,9 +1,7 @@
-body{
+.elementContainer{
     display: flex;
     justify-content: center;
     text-align: center;
-    background-color: lightgray;
-    font-family: sans-serif;
 }
 
 .container{

@@ -1,4 +1,4 @@
-import './App.css';
+import './Shop.css';
 import {useState} from "react";
 
 const shopItems = [
@@ -44,7 +44,7 @@ const ShopItem = ({shopItem}) =>{
   )
 }
 
-function App() {
+function Shop() {
   return (
     <>
       {shopItems.map(shopItem => ShopItem({shopItem}))}
@@ -52,4 +52,4 @@ function App() {
   );
 }
 
-export default App;
+export default Shop;
