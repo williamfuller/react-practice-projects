@@ -8,7 +8,7 @@ const SEARCHENDPOINT = "search?q="
 const Display = ({url}) => {
 
   return (
-    <div className="container">
+    <div className="box">
         <img className = {url !== ""?"gif":"gif hidden"} src={url} alt="Gif element"/>
     </div>
   )
@@ -44,11 +44,11 @@ function Gif() {
   const [url, setUrl] = useState("")
 
   return (
-    <>
+    <div className="gif-container">
       <h1>Super Simple GIF Finder</h1>
       <Display url={url}/>
       <QueryBar setUrl={setUrl}/>
-    </>
+    </div>
   );
 }
 

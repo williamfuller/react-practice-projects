@@ -1,12 +1,13 @@
-.elementContainer{
+.gif-container{
     display: flex;
     justify-content: center;
     text-align: center;
+    flex-direction: column;
 }
 
-.container{
+.box{
     width: min(80vw, 500px);
-    height: max(60vh, 300px);
+    height: max(40vh, 250px);
     display: flex;
     justify-content: center;
     margin: 2rem;

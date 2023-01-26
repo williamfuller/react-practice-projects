@@ -46,9 +46,9 @@ const ShopItem = ({shopItem}) =>{
 
 function Shop() {
   return (
-    <>
+    <div className="shop-container">
       {shopItems.map(shopItem => ShopItem({shopItem}))}
-    </>
+    </div>
   );
 }
 
