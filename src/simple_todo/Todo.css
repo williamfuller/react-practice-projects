@@ -54,12 +54,11 @@ h2{
    padding: 1em;
    width: fit-content; 
    border-radius: 16px;
-   background-color: black;
-   color: white;
+   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;   flex-direction: column;
    display: flex;
-   flex-direction: column;
    justify-content: center;
    align-items: center;
+   background-color: whitesmoke;
 }
 
 .todo-add-window input{
@@ -81,7 +80,6 @@ h2{
     cursor: pointer;
     border: none;
     border-radius: 5px;
-
 }
 
 .cancel-btn{
