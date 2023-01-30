@@ -1,21 +1,12 @@
-:root{
-    --bg-color: #1D2228;
-    --primary-color: #E1E2E2;
-    --secondary-color: #FB8122;
-}
-
 .todo-container{
     margin: 0;
     padding: 0;
     font-family: monospace;
-    background-color: var(--bg-color);
-    height: 100vh;
 }
 
-h1{
+.titleText{
     text-align: center;
     padding: 1em;
-    color: var(--secondary-color)
 }
  
 h2{
@@ -27,17 +18,15 @@ h2{
 }
 
 .todo{
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
     font-weight: bold;
     font-size: larger;
     padding: 1em;
     margin: 1em auto;
     width: 60%;
-
     border-radius: 16px;
     display: flex;
     justify-content: space-between;
+    background-color: lightgray;
 }
 
 .todo-text, .todo-del-btn, .todo-add-btn, .todo-add-window button{
@@ -46,8 +35,6 @@ h2{
 
 .todo-del-btn{
     font-weight: bold;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
     border-radius: 16px;
     padding-inline: 5px;
 }
@@ -55,13 +42,7 @@ h2{
 .todo-add-btn{
     position: absolute;
     right: 20px;
-    bottom : 20px;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    padding: 1em;
-    border-radius: 50%;
-    font-weight: bolder;
-    font-size: x-large;
+    bottom : 50px;
 }
 
 .todo-add-window{
@@ -70,8 +51,6 @@ h2{
    padding: 1em;
    width: 50%; 
    margin: 0 auto;
-   background-color: var(--primary-color);
-   color: var(--secondary-color);
    border-radius: 16px;
    display: flex;
    flex-direction: column;
@@ -80,13 +59,30 @@ h2{
 }
 
 .todo-add-window input{
-    margin: 1em;
-    width: 80%;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold; 
 }
 
-.todo-add-window button{
-    width: 30%;
-    margin-bottom: 0.5em;
+.btn{
+    padding: 0.5em 2em 0.5em 2em;
+    margin-top: 1em;
+    background-color: #c2410c;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.cancel-btn{
+    color: #c2410c;
+    background-color: lightgray;
 }
 
 .hide{

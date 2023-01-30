@@ -22,12 +22,12 @@ const AddTodoWindow = ({todos, setTodos}) => {
     <>
       <div className={isVisible? "todo-add-window": "hide todo-add-window"}>
         <h2>Add new todo</h2>
-        <input value={newTodoText} type="text" onChange={e => setNewTodoText(e.target.value)}></input>
+        <input value={newTodoText} type="text" onChange={e => setNewTodoText(e.target.value)} placeholder="Enter Todo"></input>
 
-        <button className="add-btn" onClick = {() => {setIsVisible(false); addTodo();}}>Add</button>
-        <button className="cancel-btn" onClick = {() => setIsVisible(false)}>Cancel</button>
+        <button className="add-btn btn" onClick = {() => {setIsVisible(false); addTodo();}}>Add</button>
+        <button className="cancel-btn btn" onClick = {() => setIsVisible(false)}>Cancel</button>
       </div>
-      <div className="todo-add-btn" onClick={() => setIsVisible(true)}>+</div>
+      <div className="todo-add-btn btn" onClick={() => setIsVisible(true)}>New</div>
     </>
   );
 }
@@ -74,7 +74,7 @@ const TodoList = () => {
 const Todo = () => {
   return (
     <div className="todo-container">
-      <h1>Simple To Do</h1>
+      <h1 className="titleText">Simple To Do</h1>
       <TodoList />
     </div>
   );

@@ -28,12 +28,29 @@ const Navbar = () =>{
   )
 }
 
+const WelcomeContent = () =>{
+  return (
+    <div className="welcomeContainer">
+      <h1>Practice React Project Navigator</h1>
+      <p>
+        This is a simple interface for navigating around some projects I made to learn and practice 
+        react, these are very simple and mainly represent a single react component.
+      </p>
+      <p>
+        Using the Nav bar above you can navigate between the different projects
+      </p>
+    </div>  
+        )
+}
+
 function App() {
   return (
     <Router>
         <Navbar/>
+
         <div className="content">
           <Routes >
+            <Route path="/" element={<WelcomeContent />} />
             <Route path="/clock" element={<Clock />} />
             <Route path="/shop" element={<Shop />} />
             <Route path="/todo" element={<Todo />} />
